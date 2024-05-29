@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'sexeduapp/base copy.html' %}
+{% load static %}
+
+{% block costum_css %}
+<link rel="stylesheet" href="{% static 'css/report.css' %}">
+{% endblock %}
+
+{% block body_block %}
+ <!-- Form -->
+ <div class="container">
+  <div class="row">
+    <div class="col">
+      <!-- Left Box -->
+      <h1 style="font-weight: bold;">Ada yang bisa kami bantu?</h1>
+      <p>Terima kasih sebelumnya telah menghubungi kami. Bagaimana kami membantumu?</p>
+      <form method="POST" action="{% url 'sexeduapp:report_view' %}" autocomplete="on">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-danger">Laporkan</button>
+      </form>
+    </div>
+    <!-- Right Box -->
+    <div class="col-auto">
+      <img src="{% static 'img/report.svg' %}" class="rounded float-end" alt="model">
+    </div>
+  </div>
+</div>
+<!-- End Form -->
+{% block costum_js %}
+<script src="{% static 'js/report.js' %}"></script>
+{% endblock %}
+{% endblock %}

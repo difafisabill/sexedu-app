@@ -1,0 +1,38 @@
+.container{
+    margin-top: 200px;
+  }
+
+  .custom-input {
+    width: 500px; /* Ubah sesuai kebutuhan */
+    height: 40px; /* Ubah sesuai kebutuhan */
+  }
+
+  .custom-textarea {
+    width: 500px; /* Ubah sesuai kebutuhan */
+    height: 100px; /* Ubah sesuai kebutuhan */
+  }
+  
+  .btn {
+    margin-top: 20px; /* Ubah nilai sesuai dengan kebutuhan */
+    padding: 10px 20px; /* Sesuaikan padding sesuai kebutuhan */
+    color: white; /* Warna teks pada tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Mengatur radius sudut tombol */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat diarahkan ke tombol */
+    font-size: 16px; /* Ukuran font */
+  }
+
+  .btn1:hover {
+    background-color: darkviolet; /* Warna latar belakang saat tombol dihover */
+  }
+
+  img.report {
+  width: 600px; /* Atur lebar gambar sesuai kebutuhan */
+  height: 600px; /* Biarkan tinggi gambar menyesuaikan proporsi lebar */
+  display: block; /* Membuat gambar menjadi elemen blok */
+  margin: 0 auto; /* Posisikan gambar ke tengah secara horizontal */
+  margin-top: -400px; /* Atur jarak atas gambar dari elemen di atasnya */
+  margin-left: 500px; /* Menggeser gambar ke kanan sejauh 50px dari posisi awalnya */
+  }
+
+  
